@@ -36,6 +36,20 @@ const observer = new IntersectionObserver(
   { threshold: 0.4 }
 );
 observer.observe(sectionAchv);
+/* ===== Mission bullet fade‑in ===== */
+const missionItems = document.querySelectorAll(".mission-bullets li");
+const mObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach((entry, idx) => {
+      if (entry.isIntersecting) {
+        entry.target.style.setProperty("--stagger", `${idx * 120}ms`);
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+missionItems.forEach(item => mObserver.observe(item));
 
 /* ========== FAQ Accordion ========== */
 const accBtns = document.querySelectorAll(".acc-btn");
