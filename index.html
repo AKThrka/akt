@@ -2,115 +2,183 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NBA × Lakers × Kobe Bryant</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Akito Hirooka Personal LP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ナビゲーション（常に上部固定） -->
-  <nav class="global-nav">
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#nba">NBA の魅力</a></li>
-      <li><a href="#lakers">Lakers の栄光</a></li>
-      <li><a href="#kobe">Kobe Bryant</a></li>
-      <li><a href="#gallery">ギャラリー</a></li>
-      <li><a href="#community">コミュニティ</a></li>
-      <li><a href="#cta">Join Now</a></li>
-    </ul>
-  </nav>
+<!-- ===== Sticky Nav ===== -->
+<header class="header">
+  <div class="container nav-wrapper">
+    <div class="logo">Akito&nbsp;H.</div>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#achievements">Works</a>
+      <a href="#contact" class="btn btn--accent">相談予約</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-  <!-- Hero セクション -->
-  <section id="hero" class="hero">
-    <img src="images/hero.jpg" alt="NBA × Lakers × Kobe Bryant" />
-    <div class="hero-content">
-      <h1>NBAの魂を感じる──Lakers & Kobe Bryant</h1>
-      <p>ゴールドとパープルの伝統を、あなたの心に。</p>
-      <a href="#cta" class="btn-primary">今すぐ参加する</a>
-    </div>
-  </section>
-
-  <!-- NBA の魅力イントロ -->
-  <section id="nba" class="section">
-    <h2>NBA の魅力</h2>
-
-    <!-- 1. 熱狂の歴史 -->
-    <div class="nba-feature">
-      <img src="images/nba-history.jpg" alt="NBAの歴史" class="feature-image" />
-      <h3>1. 熱狂の歴史</h3>
-      <p>
-        1946年の創設以来、NBAは数々のスター選手と劇的な試合で世界中のファンを魅了してきました。ビル・ラッセルやマイケル・ジョーダン、レブロン・ジェームズなど時代を象徴する選手がリーグを牽引し、そのゲームスタイルは常に進化し続けています。
+<!-- ===== Hero ===== -->
+<section id="hero" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>人とテクノロジーをつなぐ<br class="sp-only" />翻訳家</h1>
+      <p class="sub">
+        外資系 PM が導く「公共事業 × DX」成功の方程式 — <br />
+        500 名超に変革を届けた実践派講師
       </p>
+      <a href="#contact" class="btn btn--primary">無料相談を予約する</a>
     </div>
+    <div class="hero-img">
+      <img src="image/hero_image_cyber_fullbody.png" alt="Akito Hirooka" />
+    </div>
+  </div>
+</section>
 
-    <!-- 2. グローバルな人気 -->
-    <div class="nba-feature">
-      <img src="images/nba-global.jpg" alt="NBAのグローバルな人気" class="feature-image" />
-      <h3>2. グローバルな人気</h3>
-      <ul>
-        <li>200以上の国と地域でテレビ中継・配信</li>
-        <li>世界中に4億人以上のSNSフォロワー</li>
-        <li>毎年開催される国際試合ツアーで多くのファンと交流</li>
+<!-- ===== About ===== -->
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div class="avatar">
+      <img src="image/Teams用.jpg" alt="Akito Hirooka" />
+    </div>
+    <div class="about-text">
+      <p class="mission">
+        公共の未来を創るプロジェクトに、テクノロジーと人を橋渡し。現場目線で課題を解き、誰も取り残さない DX を実現します。
+      </p>
+      <ul class="skills">
+        <li>PM / DX 推進</li><li>Microsoft 365</li><li>生成 AI</li>
+        <li>ネットワーク & セキュリティ</li><li>VBA / Excel</li><li>Web 制作</li>
       </ul>
-      <p>
-        各国のトップ選手たちがNBAで才能を磨き、母国へ帰ってリーグ発展の起爆剤となるなど、世界中のバスケットボール界を牽引しています。
-      </p>
     </div>
+  </div>
+</section>
 
-    <!-- 3. スタイルとカルチャー -->
-    <div class="nba-feature">
-      <img src="images/nba-culture.jpg" alt="NBAのカルチャー" class="feature-image" />
-      <h3>3. スタイルとカルチャー</h3>
-      <p>
-        コート上で繰り広げられる華麗なプレイだけでなく、選手のファッションや音楽、アートシーンへの影響も大きいのがNBAの特徴。コミュニティやストリートカルチャーと融合した独自のライフスタイルは、スポーツを超えたムーブメントを生んでいます。
-      </p>
+<!-- ===== Services ===== -->
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="sec-ttl">Services</h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>DX プロジェクトマネジメント</h3>
+        <p>提案から実装・定着まで伴走。計画書や KPI レポートを含む。</p>
+      </article>
+      <article class="card">
+        <h3>デジタルリテラシー研修</h3>
+        <p>Microsoft 365 & 生成 AI を“使える力”に。ハンズオン資料つき。</p>
+      </article>
+      <article class="card">
+        <h3>業務自動化ソリューション</h3>
+        <p>Power Automate・VBA を用い手作業ゼロへ。</p>
+      </article>
+      <article class="card">
+        <h3>Web & マーケティング支援</h3>
+        <p>HTML/CSS/JS と GitHub Pages で LP 構築。SNS 広告提案も。</p>
+      </article>
     </div>
+  </div>
+</section>
 
-    <!-- スタッツ＆インフォグラフィック -->
-    <div class="nba-stats">
-      <h3>NBAを数字で見る</h3>
-      <img src="images/nba-stats.png" alt="NBAスタッツインフォグラフィック" class="stats-image" />
-      <p>試合全体の平均得点やアシスト数、3P成功率など、最新シーズンのデータでリーグのダイナミクスを可視化。</p>
+<!-- ===== Achievements ===== -->
+<section id="achievements" class="achievements">
+  <div class="container counter-wrap">
+    <div class="counter" data-val="500">0</div>
+    <p>受講者</p>
+    <div class="counter" data-val="30">0</div>
+    <p>プロジェクト</p>
+    <div class="counter" data-val="8">0</div>
+    <p>年の経験</p>
+  </div>
+</section>
+
+<!-- ===== Story ===== -->
+<section id="story" class="story">
+  <div class="container">
+    <h2 class="sec-ttl">Career Path</h2>
+    <ul class="timeline">
+      <li><span>200X</span>証券営業：顧客本位の提案力</li>
+      <li><span>201X</span>ネットワークエンジニア：大規模インフラ</li>
+      <li><span>201X</span>人材営業：課題解決セールス</li>
+      <li><span>202X</span>組織開発・チェンジマネジメント</li>
+      <li><span>202X</span>現職 PM & DX リード</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section id="voices" class="voices">
+  <div class="container">
+    <h2 class="sec-ttl">Voices</h2>
+    <blockquote>
+      「複雑な自治体 DX 案件で、要件整理から導入まで驚くほどスムーズ。現場目線の説明が秀逸でした！」<br />
+      <cite>— 自治体 ICT 推進課 課長 K.Y.</cite>
+    </blockquote>
+    <blockquote>
+      「Power Automate 研修で 1 週間かかる作業が 30 分に短縮。受講者満足度 98%！」<br />
+      <cite>— 大手メーカー DX 推進室 S.I.</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ===== Workflow ===== -->
+<section id="workflow" class="workflow">
+  <div class="container">
+    <h2 class="sec-ttl">Workflow</h2>
+    <ol class="flow">
+      <li>フォーム送信</li>
+      <li>無料ヒアリング (30 min)</li>
+      <li>提案書 & 見積</li>
+      <li>実施・伴走</li>
+      <li>効果測定 & フォロー</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2 class="sec-ttl">FAQ</h2>
+    <div class="accordion">
+      <button class="acc-btn">料金体系は？</button>
+      <div class="acc-panel">
+        <p>研修は人数・時間で変動、PM 支援は月額または成果報酬でご提案します。</p>
+      </div>
+      <button class="acc-btn">オンラインのみで依頼可能？</button>
+      <div class="acc-panel">
+        <p>はい。Teams / Zoom などオンライン完結に対応。対面も可能です。</p>
+      </div>
+      <button class="acc-btn">生成 AI 研修で扱うツールは？</button>
+      <div class="acc-panel">
+        <p>ChatGPT、DeepL、ImageFX、Gamma 等を実演します。</p>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Lakers の栄光 -->
-  <section id="lakers" class="section">
-    <h2>Los Angeles Lakers の栄光</h2>
-    <!-- …タイムラインや実績… -->
-  </section>
+<!-- ===== Final CTA ===== -->
+<section id="contact" class="contact">
+  <div class="container contact-box">
+    <h2>見える未来を、今すぐ現実に。</h2>
+    <p>DX の第一歩を踏み出すなら — 無料相談はこちら</p>
+    <!-- ▼ Microsoft Forms の埋め込み or 外部リンクに置き換え ▼ -->
+    <a href="https://forms.office.com/your-form-id" target="_blank" class="btn btn--accent">相談フォームへ</a>
+  </div>
+</section>
 
-  <!-- Kobe Bryant -->
-  <section id="kobe" class="section">
-    <h2>Kobe Bryant：レジェンドの証言</h2>
-    <!-- …実績、名言、動画リンク… -->
-  </section>
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container">
+    <small>© 2025 Akito Hiro / All Rights Reserved</small>
+  </div>
+</footer>
 
-  <!-- ハイライトギャラリー -->
-  <section id="gallery" class="section">
-    <h2>ハイライトギャラリー</h2>
-    <!-- …動画サムネイル一覧… -->
-  </section>
-
-  <!-- ファン・コミュニティ -->
-  <section id="community" class="section">
-    <h2>ファン・コミュニティの声</h2>
-    <!-- …SNSフィード、コメント抜粋… -->
-  </section>
-
-  <!-- CTA -->
-  <section id="cta" class="section cta-section">
-    <h2>今すぐメルマガ登録！</h2>
-    <form>
-      <input type="email" placeholder="メールアドレスを入力" required />
-      <button type="submit" class="btn-primary">登録する</button>
-    </form>
-  </section>
-
-  <!-- FAB：トップに戻るボタン -->
-  <button id="backToTop" class="fab" aria-label="ページトップへ戻る">⇧</button>
-
-  <script src="script.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
