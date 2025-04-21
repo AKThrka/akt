@@ -94,34 +94,29 @@ img {
   background: var(--neutral-light);
 }
 
-/* ---------- Hero ---------- */
+/* ▼ styles.css ― 既存 .hero ブロックを上書き・追記する形で */
 .hero {
-  padding: 140px 0 80px;
-  background: #04111e;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2rem;
-}
-.hero-text h1 {
-  font-family: var(--ff-heading);
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-  line-height: 1.2;
-  margin: 0 0 1rem;
-}
-.sub {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  color: var(--neutral-light);
-}
-.hero-img img {
+  /* 画面全体を占める */
+  min-height: 100vh;          /* full viewport height */
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  padding: 0;                 /* 上下の余白をゼロに */
+  display: flex;              /* 子要素を中央寄せ */
+  align-items: center;
+  background: #04111e;        /* お好みでグラデ等そのまま維持 */
 }
 
+/* “コンテナ幅を 90%→100%” に広げたい場合は ↓ */
+.hero .container {
+  width: 100%;
+  max-width: none;
+  padding: 0 5%;              /* 横だけ軽く余白を確保 */
+}
+
+@media (max-width: 820px) {
+  .hero {                    /* モバイルでも full 高さ維持 */
+    min-height: 100vh;
+  }
+}
 /* ---------- About ---------- */
 .about {
   padding: 120px 0;
